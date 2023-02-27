@@ -8,7 +8,7 @@
 
 2. BudgetBuddy:
 
-	This project is an Amazon price notifier that allows users to set a target price for a product and receive email notifications when the price drops below that threshold. The program works by scraping the product's price data from Amazon's website, comparing it to the user's desired price, and sending an email notification if the current price meets the criteria.
+	This project is an Amazon price notifier that allows users to set a target price for a product and receive email notifications when the price drops below that threshold. The program works by scraping the product's price data from Amazon's website every 15 minutes, comparing it to the user's desired price, and sending an email notification if the current price meets the criteria.
 
 	This project can be a useful tool for users who want to monitor the prices of products on Amazon and get notified when they drop to a desired level. It can help users save money by allowing them to purchase products at a lower price and avoid overpaying for products.
 
