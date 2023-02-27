@@ -23,7 +23,7 @@ filename = "requests.json"
 wait = [
     'I\'ll notify you via email when the prices are dropped!',
     'You\'ll be notified',
-    'Okay, noted!',    
+    'Okay, noted!'    
     ]
 
 class EmailError(Exception):
@@ -121,7 +121,7 @@ def get_product_details():
             print("There are currently no discounts on this product!")
         except AttributeError:
             print("Item is unavailable!")
-            return "Item is unavailable!"       #Correction needed                    
+            return "Item is unavailable!"                        
         pass
 
 def push(title, price, customer_price, link, email):
@@ -223,7 +223,7 @@ def notify():
                 delete_entry(key)
             else:
                 print("Rechecking... "+ pName)
-        time.sleep(10)
+        time.sleep(900)
     except TypeError:
         print("Sleeping")
         time.sleep(10)
