@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+</head>
+<style>
+    .camera{
+        border: 2px solid red;
+        width: 500px;
+        height: 500px;
+    }
+
+    .image{
+        width: 200px;
+        height: 200;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="camera"></div>
+        <button id="btn" onclick="take_picture()">Capture</button>
+        <button id="close" onclick="close()">Close</button>
+        <!-- <button id="save" onclick="save_image()">Proceed</button> -->
+        <div class="image" id="image"></div>
+    </div>
+</body>
+<script>
+    
+    Webcam.attach(".camera");
+
+    Webcam.set({
+            width : 350,
+            height : 350,
+            image_format : 'jpeg',
+            jpeg_quality : 90
+        });
+
+    function take_picture() {
+
+        Webcam.snap(function (picture_data) {
+            document.getElementById("image").innerHTML = 
+            '<img src="'+picture_data+'"/>';
+            console.log(picture_data);
+            Webcam.reset();
+        });
+    }
+
+    function close() {
+        Webcam.reset();
+    }
+
+    
+
+</script>
+</html>
