@@ -81,7 +81,7 @@ try:
                 else:
                     print("Rechecking... "+ pName)
                     pass
-            time.sleep(10)
+            time.sleep(900)
         except TypeError:
             print("Sleeping")
             time.sleep(10)
