@@ -5,6 +5,7 @@
 	This project is an AI-powered chatbot built using the Natural Language Toolkit (NLTK) in Python. The chatbot is designed to read text data from a text file and answer questions based on the information contained within the file. The chatbot uses cosine similarity to map the user's question to the most appropriate answer in the text file. This approach enables the chatbot to provide relevant and accurate responses to user questions, making it a useful tool for automating customer service or providing quick access to information. Overall, this project demonstrates how natural language processing techniques can be used to build powerful AI-powered chatbots that can be customized to specific use cases.
 
 	Demo : https://portfolioharshil.pythonanywhere.com
+	(Please make sure you are using a laptop for using the AI Assistant)
 
 2. BudgetBuddy:
 
