@@ -45,7 +45,7 @@
 
 6. Fundus Vision:
 
-	This project utilizes transfer learning to develop a model that can classify fundus images of the eye as either having cataracts or being normal. The model used is VGG19, which has been integrated with Flask to create a website where users can upload an image of the fundus of the eye and run the model.
+	This project utilizes transfer learning to fine-tune a model that can classify fundus images of the eye as either having cataract or being normal. The CNN model, VGG19 was used, which has been integrated with Flask to create a website where users can upload an image of the fundus of the eye and run the model.
 
 	When the user clicks on "Run Model," the uploaded JPEG/JPG image is converted into a machine-readable format, and the VGG19 model is triggered to classify the image as either having cataracts or being normal.
 
